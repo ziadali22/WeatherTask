@@ -16,6 +16,7 @@
 		99BD6ADF29CB17F3001484A8 /* DashBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BD6ADB29CB17F3001484A8 /* DashBoardViewModel.swift */; };
 		99BD6AE029CB17F3001484A8 /* DashBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99BD6ADC29CB17F3001484A8 /* DashBoardViewController.xib */; };
 		99BD6B2629CB2EC6001484A8 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 99BD6B2529CB2EC6001484A8 /* Networking */; };
+		99BD6B3C29CC6F19001484A8 /* UIWeather in Frameworks */ = {isa = PBXBuildFile; productRef = 99BD6B3B29CC6F19001484A8 /* UIWeather */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99BD6B2629CB2EC6001484A8 /* Networking in Frameworks */,
+				99BD6B3C29CC6F19001484A8 /* UIWeather in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +135,7 @@
 			name = WeatherTask;
 			packageProductDependencies = (
 				99BD6B2529CB2EC6001484A8 /* Networking */,
+				99BD6B3B29CC6F19001484A8 /* UIWeather */,
 			);
 			productName = WeatherTask;
 			productReference = 99BD6AB929CA1E07001484A8 /* WeatherTask.app */;
@@ -412,6 +415,10 @@
 		99BD6B2529CB2EC6001484A8 /* Networking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Networking;
+		};
+		99BD6B3B29CC6F19001484A8 /* UIWeather */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UIWeather;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
