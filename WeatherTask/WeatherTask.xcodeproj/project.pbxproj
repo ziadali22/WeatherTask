@@ -9,19 +9,26 @@
 /* Begin PBXBuildFile section */
 		99BD6ABD29CA1E07001484A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BD6ABC29CA1E07001484A8 /* AppDelegate.swift */; };
 		99BD6ABF29CA1E07001484A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BD6ABE29CA1E07001484A8 /* SceneDelegate.swift */; };
-		99BD6AC129CA1E07001484A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BD6AC029CA1E07001484A8 /* ViewController.swift */; };
 		99BD6AC629CA1E08001484A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99BD6AC529CA1E08001484A8 /* Assets.xcassets */; };
 		99BD6AC929CA1E08001484A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99BD6AC729CA1E08001484A8 /* LaunchScreen.storyboard */; };
+		99BD6ADD29CB17F3001484A8 /* DashBoardViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BD6AD929CB17F3001484A8 /* DashBoardViewModelType.swift */; };
+		99BD6ADE29CB17F3001484A8 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BD6ADA29CB17F3001484A8 /* DashBoardViewController.swift */; };
+		99BD6ADF29CB17F3001484A8 /* DashBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BD6ADB29CB17F3001484A8 /* DashBoardViewModel.swift */; };
+		99BD6AE029CB17F3001484A8 /* DashBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99BD6ADC29CB17F3001484A8 /* DashBoardViewController.xib */; };
+		99BD6B2629CB2EC6001484A8 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 99BD6B2529CB2EC6001484A8 /* Networking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		99BD6AB929CA1E07001484A8 /* WeatherTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99BD6ABC29CA1E07001484A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99BD6ABE29CA1E07001484A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		99BD6AC029CA1E07001484A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		99BD6AC529CA1E08001484A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99BD6AC829CA1E08001484A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99BD6ACA29CA1E08001484A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99BD6AD929CB17F3001484A8 /* DashBoardViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewModelType.swift; sourceTree = "<group>"; };
+		99BD6ADA29CB17F3001484A8 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
+		99BD6ADB29CB17F3001484A8 /* DashBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewModel.swift; sourceTree = "<group>"; };
+		99BD6ADC29CB17F3001484A8 /* DashBoardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashBoardViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99BD6B2629CB2EC6001484A8 /* Networking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,7 @@
 			children = (
 				99BD6ABB29CA1E07001484A8 /* WeatherTask */,
 				99BD6ABA29CA1E07001484A8 /* Products */,
+				99BD6B2429CB2EC6001484A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +92,27 @@
 		99BD6AD229CA3DFD001484A8 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				99BD6AC029CA1E07001484A8 /* ViewController.swift */,
+				99BD6AD829CB17CE001484A8 /* DashBoard */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		99BD6AD829CB17CE001484A8 /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				99BD6AD929CB17F3001484A8 /* DashBoardViewModelType.swift */,
+				99BD6ADA29CB17F3001484A8 /* DashBoardViewController.swift */,
+				99BD6ADB29CB17F3001484A8 /* DashBoardViewModel.swift */,
+				99BD6ADC29CB17F3001484A8 /* DashBoardViewController.xib */,
+			);
+			path = DashBoard;
+			sourceTree = "<group>";
+		};
+		99BD6B2429CB2EC6001484A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +131,9 @@
 			dependencies = (
 			);
 			name = WeatherTask;
+			packageProductDependencies = (
+				99BD6B2529CB2EC6001484A8 /* Networking */,
+			);
 			productName = WeatherTask;
 			productReference = 99BD6AB929CA1E07001484A8 /* WeatherTask.app */;
 			productType = "com.apple.product-type.application";
@@ -148,6 +178,7 @@
 			files = (
 				99BD6AC929CA1E08001484A8 /* LaunchScreen.storyboard in Resources */,
 				99BD6AC629CA1E08001484A8 /* Assets.xcassets in Resources */,
+				99BD6AE029CB17F3001484A8 /* DashBoardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +189,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99BD6AC129CA1E07001484A8 /* ViewController.swift in Sources */,
+				99BD6ADE29CB17F3001484A8 /* DashBoardViewController.swift in Sources */,
+				99BD6ADF29CB17F3001484A8 /* DashBoardViewModel.swift in Sources */,
+				99BD6ADD29CB17F3001484A8 /* DashBoardViewModelType.swift in Sources */,
 				99BD6ABD29CA1E07001484A8 /* AppDelegate.swift in Sources */,
 				99BD6ABF29CA1E07001484A8 /* SceneDelegate.swift in Sources */,
 			);
@@ -374,6 +407,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		99BD6B2529CB2EC6001484A8 /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 99BD6AB129CA1E07001484A8 /* Project object */;
 }
