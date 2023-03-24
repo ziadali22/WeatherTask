@@ -16,7 +16,7 @@ public struct MainWeather: Codable {
     public let wind: Wind?
     public let rain: Rain?
     public let clouds: Clouds?
-    public let dt: Int?
+    public let dt: Date?
     public let sys: Sys?
     public let timezone, id: Int?
     public let name: String?
@@ -25,19 +25,19 @@ public struct MainWeather: Codable {
 
 // MARK: - Clouds
 public struct Clouds: Codable {
-    let all: Int?
+    public let all: Int?
 }
 
 // MARK: - Coord
 public struct Coord: Codable {
-    let lon, lat: Double?
+    public let lon, lat: Double?
 }
 
 // MARK: - Main
 public struct Main: Codable {
-    let temp, feelsLike, tempMin, tempMax: Double?
+    public let temp, feelsLike, tempMin, tempMax: Double?
     public let pressure, seaLevel, grndLevel, humidity: Int?
-    let tempKf: Double?
+    public let tempKf: Double?
 
     enum CodingKeys: String, CodingKey {
         case temp
@@ -53,8 +53,8 @@ public struct Main: Codable {
 
 // MARK: - Rain
 public struct Rain: Codable {
-    let the1H: Double?
-    let the3H: Double?
+    public let the1H: Double?
+    public let the3H: Double?
 
     enum CodingKeys: String, CodingKey {
         case the1H = "1h"
@@ -64,10 +64,10 @@ public struct Rain: Codable {
 
 // MARK: - Sys
 public struct Sys: Codable {
-    let type, id: Int?
-    let country: String?
-    let sunrise, sunset: Int?
-    let pod: String?
+    public let type, id: Int?
+    public let country: String?
+    public let sunrise, sunset: Int?
+    public let pod: String?
 }
 
 // MARK: - Weather
@@ -85,4 +85,10 @@ public struct Wind: Codable {
     public let speed: Double?
     public let deg: Int?
     public let gust: Double?
+}
+
+extension MainWeather {
+    public var temp: Double? {
+        return main?.temp
+    }
 }
