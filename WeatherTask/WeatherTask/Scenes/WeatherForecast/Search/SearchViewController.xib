@@ -14,6 +14,7 @@
                 <outlet property="latitudeStackView" destination="H5n-by-ftP" id="hbR-JS-aKa"/>
                 <outlet property="latitudeTextField" destination="7La-AI-7Td" id="3gU-FD-W4J"/>
                 <outlet property="longitudeTextField" destination="u1P-Oc-d7c" id="gW8-JR-ksF"/>
+                <outlet property="searchButton" destination="yoq-bx-hjp" id="if3-Jg-fa0"/>
                 <outlet property="searchOptionsCollectionView" destination="pQ3-Zp-0FT" id="71d-AN-4Zg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="zipCodeTextField" destination="fUf-sQ-6jF" id="tYd-94-84m"/>

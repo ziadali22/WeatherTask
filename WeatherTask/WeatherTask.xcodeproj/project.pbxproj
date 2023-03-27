@@ -33,6 +33,10 @@
 		99F38C8A29CF76CF0094B8E6 /* SearchOptionsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99F38C8829CF76CF0094B8E6 /* SearchOptionsCVC.xib */; };
 		99F38C8E29CF7C410094B8E6 /* ForecastTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F38C8C29CF7C410094B8E6 /* ForecastTVC.swift */; };
 		99F38C8F29CF7C410094B8E6 /* ForecastTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99F38C8D29CF7C410094B8E6 /* ForecastTVC.xib */; };
+		99F38C9229D1C1290094B8E6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F38C9129D1C1290094B8E6 /* Coordinator.swift */; };
+		99F38C9429D1C1380094B8E6 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F38C9329D1C1380094B8E6 /* MainCoordinator.swift */; };
+		99F38C9629D1C67C0094B8E6 /* ForecastChildCoorindator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F38C9529D1C67C0094B8E6 /* ForecastChildCoorindator.swift */; };
+		99F38C9829D1D5690094B8E6 /* CurrentWeatherChildCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F38C9729D1D5690094B8E6 /* CurrentWeatherChildCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +66,10 @@
 		99F38C8829CF76CF0094B8E6 /* SearchOptionsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchOptionsCVC.xib; sourceTree = "<group>"; };
 		99F38C8C29CF7C410094B8E6 /* ForecastTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTVC.swift; sourceTree = "<group>"; };
 		99F38C8D29CF7C410094B8E6 /* ForecastTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecastTVC.xib; sourceTree = "<group>"; };
+		99F38C9129D1C1290094B8E6 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		99F38C9329D1C1380094B8E6 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		99F38C9529D1C67C0094B8E6 /* ForecastChildCoorindator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastChildCoorindator.swift; sourceTree = "<group>"; };
+		99F38C9729D1D5690094B8E6 /* CurrentWeatherChildCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherChildCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +149,7 @@
 		99BD6AD229CA3DFD001484A8 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				99F38C9029D1BD600094B8E6 /* Coordinator */,
 				99BD6AD829CB17CE001484A8 /* DashBoard */,
 				995D3CA729CDE22100902287 /* WeatherForecast */,
 			);
@@ -211,6 +220,17 @@
 				99F38C8D29CF7C410094B8E6 /* ForecastTVC.xib */,
 			);
 			path = ForecastCell;
+			sourceTree = "<group>";
+		};
+		99F38C9029D1BD600094B8E6 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				99F38C9129D1C1290094B8E6 /* Coordinator.swift */,
+				99F38C9329D1C1380094B8E6 /* MainCoordinator.swift */,
+				99F38C9529D1C67C0094B8E6 /* ForecastChildCoorindator.swift */,
+				99F38C9729D1D5690094B8E6 /* CurrentWeatherChildCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +314,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99F38C9429D1C1380094B8E6 /* MainCoordinator.swift in Sources */,
+				99F38C9229D1C1290094B8E6 /* Coordinator.swift in Sources */,
 				99F38C7A29CE3B9D0094B8E6 /* SearchViewModel.swift in Sources */,
 				99F38C7929CE3B9D0094B8E6 /* SearchViewController.swift in Sources */,
 				99BD6ADE29CB17F3001484A8 /* DashBoardViewController.swift in Sources */,
@@ -301,7 +323,9 @@
 				99F38C6E29CDE2750094B8E6 /* WeatherForecastViewModelType.swift in Sources */,
 				99BD6ADD29CB17F3001484A8 /* DashBoardViewModelType.swift in Sources */,
 				99F38C8E29CF7C410094B8E6 /* ForecastTVC.swift in Sources */,
+				99F38C9829D1D5690094B8E6 /* CurrentWeatherChildCoordinator.swift in Sources */,
 				99F38C7029CDE2750094B8E6 /* WeatherForecastViewModel.swift in Sources */,
+				99F38C9629D1C67C0094B8E6 /* ForecastChildCoorindator.swift in Sources */,
 				99F38C7F29CE3EBF0094B8E6 /* SearchOptionCVC.swift in Sources */,
 				99BD6ABD29CA1E07001484A8 /* AppDelegate.swift in Sources */,
 				99BD6ABF29CA1E07001484A8 /* SceneDelegate.swift in Sources */,

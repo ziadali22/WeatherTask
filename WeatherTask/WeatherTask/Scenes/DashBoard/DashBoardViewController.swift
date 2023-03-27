@@ -29,7 +29,7 @@ class DashBoardViewController: UIViewController {
     
     private let viewModel: DashBoardViewModelType
     private var locationManager = CLLocationManager()
-    
+    weak var coordinator: MainCoordinator?
     
     // MARK: Init
     
@@ -86,8 +86,10 @@ extension DashBoardViewController {
 extension DashBoardViewController {
     
     @IBAction func navigateToForecast(_ sender: Any) {
-        let forecastViewController = WeatherForecastViewController(viewModel: WeatherForecastViewModel())
-        self.show(forecastViewController, sender: nil)
+//        let forecastViewController = WeatherForecastViewController(viewModel: WeatherForecastViewModel())
+//        self.show(forecastViewController, sender: nil)
+        
+        coordinator?.naviagteToForecast()
     }
     
     @IBAction func navigationToCurrentWheather(_ sender: Any) {
@@ -95,19 +97,7 @@ extension DashBoardViewController {
     }
     
     private func showAlertToEnableGps() {
-        let alert = UIAlertController(title: "Enable Gps For Weather", message: "GPS access is restricted. In order to get weather data, please enable GPS in the Settigs app under Privacy, Location Services.", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Go to Settings now", style: UIAlertAction.Style.default, handler: { (alert: UIAlertAction!) in
-            if let url = URL(string: "App-prefs:root=Privacy&path=LOCATION") {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            }
-                    }))
-        
-        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: { _ in
-            self.dismiss(animated: true)
-        }))
-        
-        alert.modalPresentationStyle = .overFullScreen
-        self.present(alert, animated: true)
+        coordinator?.showErrorAlert()
     }
 }
 

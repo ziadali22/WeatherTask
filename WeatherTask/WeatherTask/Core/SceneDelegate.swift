@@ -10,15 +10,17 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var appCoordinator : MainCoordinator?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        let dashBoardViewControlelr = DashBoardViewController(viewModel: DashBoardViewModel())
-        let dashBoard = UINavigationController(rootViewController: dashBoardViewControlelr)
-        window?.rootViewController = dashBoard
+        
+        let navigationController = UINavigationController()
+        appCoordinator = MainCoordinator(navigationController: navigationController)
+        appCoordinator?.startFlow()
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
 

@@ -20,6 +20,8 @@ class WeatherForecastViewController: UIViewController {
     // MARK: Properties
         
     private let viewModel: WeatherForecastViewModelType
+    weak var coordinator: ForecastChildCoorindator?
+    
     let optionDumbData = ["Cairo", "Tokyo"]
     // MARK: Init
         
@@ -51,9 +53,7 @@ class WeatherForecastViewController: UIViewController {
 extension WeatherForecastViewController {
     
     @IBAction func navigateToSearchOptions(_ sender: Any) {
-        let vc = SearchViewController(viewModel: SearchViewModel())
-        vc.modalPresentationStyle = .popover
-        self.present(vc, animated: true)
+        coordinator?.navigateToSearchOptions()
     }
 }
 

@@ -19,6 +19,9 @@ class SearchViewController: UIViewController {
     @IBOutlet private(set) weak var latitudeStackView: UIStackView!
     @IBOutlet private(set) weak var latitudeTextField: UITextField!
     @IBOutlet private(set) weak var longitudeTextField: UITextField!
+    
+    @IBOutlet weak var searchButton: UIButton!
+    
     // MARK: Properties
         
     private let viewModel: SearchViewModelType
