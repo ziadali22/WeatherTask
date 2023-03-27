@@ -17,6 +17,22 @@
 		99BD6AE029CB17F3001484A8 /* DashBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99BD6ADC29CB17F3001484A8 /* DashBoardViewController.xib */; };
 		99BD6B2629CB2EC6001484A8 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 99BD6B2529CB2EC6001484A8 /* Networking */; };
 		99BD6B3C29CC6F19001484A8 /* UIWeather in Frameworks */ = {isa = PBXBuildFile; productRef = 99BD6B3B29CC6F19001484A8 /* UIWeather */; };
+		99F38C6E29CDE2750094B8E6 /* WeatherForecastViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F38C6B29CDE2750094B8E6 /* WeatherForecastViewModelType.swift */; };
+		99F38C6F29CDE2750094B8E6 /* WeatherForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F38C6C29CDE2750094B8E6 /* WeatherForecastViewController.swift */; };
+		99F38C7029CDE2750094B8E6 /* WeatherForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F38C6D29CDE2750094B8E6 /* WeatherForecastViewModel.swift */; };
+		99F38C7229CDE27C0094B8E6 /* WeatherForecastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99F38C7129CDE27C0094B8E6 /* WeatherForecastViewController.xib */; };
+		99F38C7829CE3B9D0094B8E6 /* SearchViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F38C7429CE3B9D0094B8E6 /* SearchViewModelType.swift */; };
+		99F38C7929CE3B9D0094B8E6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F38C7529CE3B9D0094B8E6 /* SearchViewController.swift */; };
+		99F38C7A29CE3B9D0094B8E6 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F38C7629CE3B9D0094B8E6 /* SearchViewModel.swift */; };
+		99F38C7B29CE3B9D0094B8E6 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99F38C7729CE3B9D0094B8E6 /* SearchViewController.xib */; };
+		99F38C7F29CE3EBF0094B8E6 /* SearchOptionCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F38C7D29CE3EBF0094B8E6 /* SearchOptionCVC.swift */; };
+		99F38C8029CE3EBF0094B8E6 /* SearchOptionCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99F38C7E29CE3EBF0094B8E6 /* SearchOptionCVC.xib */; };
+		99F38C8429CF3FB50094B8E6 /* HourlyCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F38C8229CF3FB50094B8E6 /* HourlyCVC.swift */; };
+		99F38C8529CF3FB50094B8E6 /* HourlyCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99F38C8329CF3FB50094B8E6 /* HourlyCVC.xib */; };
+		99F38C8929CF76CF0094B8E6 /* SearchOptionsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F38C8729CF76CF0094B8E6 /* SearchOptionsCVC.swift */; };
+		99F38C8A29CF76CF0094B8E6 /* SearchOptionsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99F38C8829CF76CF0094B8E6 /* SearchOptionsCVC.xib */; };
+		99F38C8E29CF7C410094B8E6 /* ForecastTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F38C8C29CF7C410094B8E6 /* ForecastTVC.swift */; };
+		99F38C8F29CF7C410094B8E6 /* ForecastTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99F38C8D29CF7C410094B8E6 /* ForecastTVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +46,22 @@
 		99BD6ADA29CB17F3001484A8 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
 		99BD6ADB29CB17F3001484A8 /* DashBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewModel.swift; sourceTree = "<group>"; };
 		99BD6ADC29CB17F3001484A8 /* DashBoardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashBoardViewController.xib; sourceTree = "<group>"; };
+		99F38C6B29CDE2750094B8E6 /* WeatherForecastViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastViewModelType.swift; sourceTree = "<group>"; };
+		99F38C6C29CDE2750094B8E6 /* WeatherForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastViewController.swift; sourceTree = "<group>"; };
+		99F38C6D29CDE2750094B8E6 /* WeatherForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastViewModel.swift; sourceTree = "<group>"; };
+		99F38C7129CDE27C0094B8E6 /* WeatherForecastViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherForecastViewController.xib; sourceTree = "<group>"; };
+		99F38C7429CE3B9D0094B8E6 /* SearchViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelType.swift; sourceTree = "<group>"; };
+		99F38C7529CE3B9D0094B8E6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		99F38C7629CE3B9D0094B8E6 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		99F38C7729CE3B9D0094B8E6 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		99F38C7D29CE3EBF0094B8E6 /* SearchOptionCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOptionCVC.swift; sourceTree = "<group>"; };
+		99F38C7E29CE3EBF0094B8E6 /* SearchOptionCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchOptionCVC.xib; sourceTree = "<group>"; };
+		99F38C8229CF3FB50094B8E6 /* HourlyCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyCVC.swift; sourceTree = "<group>"; };
+		99F38C8329CF3FB50094B8E6 /* HourlyCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HourlyCVC.xib; sourceTree = "<group>"; };
+		99F38C8729CF76CF0094B8E6 /* SearchOptionsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOptionsCVC.swift; sourceTree = "<group>"; };
+		99F38C8829CF76CF0094B8E6 /* SearchOptionsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchOptionsCVC.xib; sourceTree = "<group>"; };
+		99F38C8C29CF7C410094B8E6 /* ForecastTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTVC.swift; sourceTree = "<group>"; };
+		99F38C8D29CF7C410094B8E6 /* ForecastTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecastTVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +77,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		995D3CA729CDE22100902287 /* WeatherForecast */ = {
+			isa = PBXGroup;
+			children = (
+				99F38C8B29CF7C240094B8E6 /* ForecastCell */,
+				99F38C8629CF76B50094B8E6 /* SearchOptionsCell */,
+				99F38C8129CF3A650094B8E6 /* HourlyCell */,
+				99F38C7329CE3B8D0094B8E6 /* Search */,
+				99F38C6B29CDE2750094B8E6 /* WeatherForecastViewModelType.swift */,
+				99F38C6C29CDE2750094B8E6 /* WeatherForecastViewController.swift */,
+				99F38C6D29CDE2750094B8E6 /* WeatherForecastViewModel.swift */,
+				99F38C7129CDE27C0094B8E6 /* WeatherForecastViewController.xib */,
+			);
+			path = WeatherForecast;
+			sourceTree = "<group>";
+		};
 		99BD6AB029CA1E07001484A8 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				99BD6AD829CB17CE001484A8 /* DashBoard */,
+				995D3CA729CDE22100902287 /* WeatherForecast */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -115,6 +163,54 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99F38C7329CE3B8D0094B8E6 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				99F38C7C29CE3E870094B8E6 /* CollectionView Cell */,
+				99F38C7429CE3B9D0094B8E6 /* SearchViewModelType.swift */,
+				99F38C7529CE3B9D0094B8E6 /* SearchViewController.swift */,
+				99F38C7629CE3B9D0094B8E6 /* SearchViewModel.swift */,
+				99F38C7729CE3B9D0094B8E6 /* SearchViewController.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		99F38C7C29CE3E870094B8E6 /* CollectionView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				99F38C7D29CE3EBF0094B8E6 /* SearchOptionCVC.swift */,
+				99F38C7E29CE3EBF0094B8E6 /* SearchOptionCVC.xib */,
+			);
+			path = "CollectionView Cell";
+			sourceTree = "<group>";
+		};
+		99F38C8129CF3A650094B8E6 /* HourlyCell */ = {
+			isa = PBXGroup;
+			children = (
+				99F38C8229CF3FB50094B8E6 /* HourlyCVC.swift */,
+				99F38C8329CF3FB50094B8E6 /* HourlyCVC.xib */,
+			);
+			path = HourlyCell;
+			sourceTree = "<group>";
+		};
+		99F38C8629CF76B50094B8E6 /* SearchOptionsCell */ = {
+			isa = PBXGroup;
+			children = (
+				99F38C8729CF76CF0094B8E6 /* SearchOptionsCVC.swift */,
+				99F38C8829CF76CF0094B8E6 /* SearchOptionsCVC.xib */,
+			);
+			path = SearchOptionsCell;
+			sourceTree = "<group>";
+		};
+		99F38C8B29CF7C240094B8E6 /* ForecastCell */ = {
+			isa = PBXGroup;
+			children = (
+				99F38C8C29CF7C410094B8E6 /* ForecastTVC.swift */,
+				99F38C8D29CF7C410094B8E6 /* ForecastTVC.xib */,
+			);
+			path = ForecastCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +275,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99F38C7229CDE27C0094B8E6 /* WeatherForecastViewController.xib in Resources */,
+				99F38C8529CF3FB50094B8E6 /* HourlyCVC.xib in Resources */,
 				99BD6AC929CA1E08001484A8 /* LaunchScreen.storyboard in Resources */,
+				99F38C8A29CF76CF0094B8E6 /* SearchOptionsCVC.xib in Resources */,
 				99BD6AC629CA1E08001484A8 /* Assets.xcassets in Resources */,
+				99F38C7B29CE3B9D0094B8E6 /* SearchViewController.xib in Resources */,
+				99F38C8F29CF7C410094B8E6 /* ForecastTVC.xib in Resources */,
 				99BD6AE029CB17F3001484A8 /* DashBoardViewController.xib in Resources */,
+				99F38C8029CE3EBF0094B8E6 /* SearchOptionCVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,11 +294,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99F38C7A29CE3B9D0094B8E6 /* SearchViewModel.swift in Sources */,
+				99F38C7929CE3B9D0094B8E6 /* SearchViewController.swift in Sources */,
 				99BD6ADE29CB17F3001484A8 /* DashBoardViewController.swift in Sources */,
 				99BD6ADF29CB17F3001484A8 /* DashBoardViewModel.swift in Sources */,
+				99F38C6E29CDE2750094B8E6 /* WeatherForecastViewModelType.swift in Sources */,
 				99BD6ADD29CB17F3001484A8 /* DashBoardViewModelType.swift in Sources */,
+				99F38C8E29CF7C410094B8E6 /* ForecastTVC.swift in Sources */,
+				99F38C7029CDE2750094B8E6 /* WeatherForecastViewModel.swift in Sources */,
+				99F38C7F29CE3EBF0094B8E6 /* SearchOptionCVC.swift in Sources */,
 				99BD6ABD29CA1E07001484A8 /* AppDelegate.swift in Sources */,
 				99BD6ABF29CA1E07001484A8 /* SceneDelegate.swift in Sources */,
+				99F38C7829CE3B9D0094B8E6 /* SearchViewModelType.swift in Sources */,
+				99F38C8929CF76CF0094B8E6 /* SearchOptionsCVC.swift in Sources */,
+				99F38C8429CF3FB50094B8E6 /* HourlyCVC.swift in Sources */,
+				99F38C6F29CDE2750094B8E6 /* WeatherForecastViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

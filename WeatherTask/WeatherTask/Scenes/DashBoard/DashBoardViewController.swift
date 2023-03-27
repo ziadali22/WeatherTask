@@ -86,7 +86,8 @@ extension DashBoardViewController {
 extension DashBoardViewController {
     
     @IBAction func navigateToForecast(_ sender: Any) {
-        
+        let forecastViewController = WeatherForecastViewController(viewModel: WeatherForecastViewModel())
+        self.show(forecastViewController, sender: nil)
     }
     
     @IBAction func navigationToCurrentWheather(_ sender: Any) {
@@ -116,8 +117,12 @@ extension DashBoardViewController:  CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         
         switch status {
-        case .restricted, .denied:
+        case .notDetermined, .restricted, .denied:
             showAlertToEnableGps()
+
+        case .authorizedAlways, .authorized, .authorizedWhenInUse:
+            locationManager.startUpdatingLocation()
+
         default:
             break
         }

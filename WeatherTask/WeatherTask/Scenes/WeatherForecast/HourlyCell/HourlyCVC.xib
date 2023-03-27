@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HourlyCVC" customModule="WeatherTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="104" height="108"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="104" height="108"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19 C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwA-Bb-wtd">
+                        <rect key="frame" x="8" y="83" width="88" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14:00 PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfS-45-F8y">
+                        <rect key="frame" x="8" y="4" width="88" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QEy-gP-rwE">
+                        <rect key="frame" x="29.666666666666671" y="30" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="Qht-hT-l0E"/>
+                            <constraint firstAttribute="width" constant="45" id="pjO-AI-Pbn"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="MwA-Bb-wtd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="CF2-Iw-fr9"/>
+                <constraint firstAttribute="trailing" secondItem="MwA-Bb-wtd" secondAttribute="trailing" constant="8" id="KNx-Xe-PUh"/>
+                <constraint firstItem="MwA-Bb-wtd" firstAttribute="top" secondItem="QEy-gP-rwE" secondAttribute="bottom" constant="8" id="YLh-YX-etl"/>
+                <constraint firstItem="tfS-45-F8y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="bmt-sh-xiO"/>
+                <constraint firstAttribute="trailing" secondItem="tfS-45-F8y" secondAttribute="trailing" constant="8" id="cZB-86-NgD"/>
+                <constraint firstItem="QEy-gP-rwE" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="d16-Gq-pOh"/>
+                <constraint firstItem="tfS-45-F8y" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="vzj-bH-OOB"/>
+                <constraint firstItem="QEy-gP-rwE" firstAttribute="top" secondItem="tfS-45-F8y" secondAttribute="bottom" constant="8" id="xib-0d-nzJ"/>
+            </constraints>
+            <size key="customSize" width="104" height="108"/>
+            <connections>
+                <outlet property="hour" destination="tfS-45-F8y" id="XmS-JP-PZu"/>
+                <outlet property="temprature" destination="MwA-Bb-wtd" id="tez-rK-MER"/>
+                <outlet property="tempratureIcon" destination="QEy-gP-rwE" id="QS4-jE-Hes"/>
+            </connections>
+            <point key="canvasLocation" x="27.480916030534349" y="40.140845070422536"/>
+        </collectionViewCell>
+    </objects>
+</document>

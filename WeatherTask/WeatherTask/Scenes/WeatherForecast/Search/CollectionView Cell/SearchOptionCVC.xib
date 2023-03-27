@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SearchOptionCVC" customModule="WeatherTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="44"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fae-Mb-YA4">
+                        <rect key="frame" x="4" y="4" width="122" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmE-XS-9Wb">
+                                <rect key="frame" x="24" y="9" width="74.333333333333329" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" red="0.1843137255" green="0.28235294119999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.92740221088435371" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZmE-XS-9Wb" firstAttribute="centerX" secondItem="Fae-Mb-YA4" secondAttribute="centerX" id="J5D-Pr-Ty4"/>
+                            <constraint firstItem="ZmE-XS-9Wb" firstAttribute="centerY" secondItem="Fae-Mb-YA4" secondAttribute="centerY" id="ckr-SK-2uh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Fae-Mb-YA4" secondAttribute="trailing" constant="4" id="4CI-S7-vqv"/>
+                <constraint firstAttribute="bottom" secondItem="Fae-Mb-YA4" secondAttribute="bottom" constant="4" id="F97-Yx-121"/>
+                <constraint firstItem="Fae-Mb-YA4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="bKb-5Z-Vk2"/>
+                <constraint firstItem="Fae-Mb-YA4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="xmZ-Cw-VgL"/>
+            </constraints>
+            <size key="customSize" width="130" height="44"/>
+            <connections>
+                <outlet property="optionName" destination="ZmE-XS-9Wb" id="mO4-UF-5cx"/>
+            </connections>
+            <point key="canvasLocation" x="99.236641221374043" y="17.605633802816904"/>
+        </collectionViewCell>
+    </objects>
+</document>
